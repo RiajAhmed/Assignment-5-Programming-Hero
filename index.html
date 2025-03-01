@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBoard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 p-4 transition-all duration-300" id="body">
+    <!-- Navbar -->
+    <nav
+      class="bg-white p-4 rounded-xl shadow-md flex justify-between items-center"
+    >
+      <div class="flex items-center gap-4">
+        <img src="./images/logo.png" alt="Dev Board Logo" />
+        <h1 class="text-xl font-bold">
+          <span class="text-cyan-900">Dev</span>Board
+        </h1>
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="bg-gray-100 gap-2 p-4 rounded-xl flex items-center">
+          <img src="./images/checkbox.png" alt="checkbox" />
+          <span class="font-bold">23</span>
+        </div>
+        <img src="./images/theme-btn.png" id="colorButton" />
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="grid grid-cols-3 gap-4 mt-4">
+      <!-- Left Panel -->
+      <div class="bg-white p-4 rounded-xl shadow-md col-span-2">
+        <div class="grid grid-cols-3 gap-4">
+          <!-- Task Assigned -->
+          <div class="bg-gray-100 p-4 gap-4 rounded-xl flex items-center">
+            <div class="bg-white text-white p-2 rounded-full">
+              <img src="./images/checkbox.png" alt="checkbox" />
+            </div>
+            <div class="flex flex-col items-start">
+              <p class="text-lg font-bold">Task Assigned</p>
+              <p class="text-3xl font-bold">6</p>
+            </div>
+          </div>
+
+          <!-- Discover Banner (Clickable) -->
+          <div
+            id="discoverBanner"
+            class="bg-gradient-to-r from-blue-600 to-blue-300 text-white p-4 rounded-xl flex items-center justify-center text-lg font-semibold cursor-pointer"
+          >
+            <div class="text-white p-2 rounded-full">
+              <img src="./images/board.png" alt="calender" />
+            </div>
+            <p>Discover Something New Today!</p>
+          </div>
+
+          <!-- Real-Time Date Card -->
+          <div class="bg-gray-100 p-4 rounded-xl flex items-center">
+            <div class="bg-white text-white p-2 mx-3 rounded-full">
+              <img src="./images/calender.png" alt="calender" />
+            </div>
+            <p class="text-lg font-bold" id="dateCard"></p>
+          </div>
+        </div>
+
+        <!-- Task Cards -->
+        <div class="grid grid-cols-3 gap-4 mt-4">
+          <div class="bg-gray-100 p-4 rounded-xl shadow-md">
+            <span class="text-sm bg-white px-2 py-1 rounded-full"
+              >ShopEase</span
+            >
+            <h2 class="font-bold mt-2">Fix Mobile Button Issue</h2>
+            <p class="text-gray-600 text-sm mt-1 bg-white px-2 py-1 rounded-xl">
+              Debug using Chrome DevTools, check for overlapping...
+            </p>
+            <p class="text-sm mt-2"><b>Deadline:</b> 21 March 2025</p>
+            <span class="bg-purple-600 text-white px-3 py-1 rounded-md text-xs"
+              >Completed</span
+            >
+          </div>
+
+          <div class="bg-gray-100 p-4 rounded-xl shadow-md">
+            <span class="text-sm bg-white px-2 py-1 rounded-full"
+              >CloudSync</span
+            >
+            <h2 class="font-bold mt-2">Add Dark Mode</h2>
+            <p class="text-gray-600 text-sm mt-1 bg-white px-2 py-1 rounded-xl">
+              Store the user's preference in localStorage, update CSS...
+            </p>
+            <p class="text-sm mt-2"><b>Deadline:</b> 21 March 2025</p>
+            <span class="bg-purple-600 text-white px-3 py-1 rounded-md text-xs"
+              >Completed</span
+            >
+          </div>
+
+          <div class="bg-gray-100 p-4 rounded-xl shadow-md">
+            <span class="text-sm bg-white px-2 py-1 rounded-full"
+              >SwiftPay</span
+            >
+            <h2 class="font-bold mt-2">Optimize Home page</h2>
+            <p class="text-gray-600 text-sm mt-1 bg-white px-2 py-1 rounded-xl">
+              Debug using Chrome DevTools, check for overlapping...
+            </p>
+            <p class="text-sm mt-2"><b>Deadline:</b> 31 March 2025</p>
+            <span class="bg-purple-600 text-white px-3 py-1 rounded-md text-xs"
+              >Completed</span
+            >
+          </div>
+
+          <div class="bg-gray-100 p-4 rounded-xl shadow-md">
+            <span class="text-sm bg-white px-2 py-1 rounded-full">Meta</span>
+            <h2 class="font-bold mt-2">Add new emoji 🤲</h2>
+            <p class="text-gray-600 text-sm mt-1 bg-white px-2 py-1 rounded-xl">
+              Debug using Chrome DevTools, check for overlapping...
+            </p>
+            <p class="text-sm mt-2"><b>Deadline:</b> 21 March 2025</p>
+            <span class="bg-purple-600 text-white px-3 py-1 rounded-md text-xs"
+              >Completed</span
+            >
+          </div>
+
+          <div class="bg-gray-100 p-4 rounded-xl shadow-md">
+            <span class="text-sm bg-white px-2 py-1 rounded-full"
+              >Google LLC</span
+            >
+            <h2 class="font-bold mt-2">Integrate OpenAI API</h2>
+            <p class="text-gray-600 text-sm mt-1 bg-white px-2 py-1 rounded-xl">
+              Debug using Chrome DevTools, check for overlapping...
+            </p>
+            <p class="text-sm mt-2"><b>Deadline:</b> 01 April 2025</p>
+            <span class="bg-purple-600 text-white px-3 py-1 rounded-md text-xs"
+              >Completed</span
+            >
+          </div>
+
+          <div class="bg-gray-100 p-4 rounded-xl shadow-md">
+            <span class="text-sm bg-white px-2 py-1 rounded-full"
+              >Glassdoar</span
+            >
+            <h2 class="font-bold mt-2">Improve Job searching</h2>
+            <p class="text-gray-600 text-sm mt-1 bg-white px-2 py-1 rounded-xl">
+              Debug using Chrome DevTools, check for overlapping...
+            </p>
+            <p class="text-sm mt-2"><b>Deadline:</b> 5 May 2025</p>
+            <span class="bg-purple-600 text-white px-3 py-1 rounded-md text-xs"
+              >Completed</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Panel -->
+      <div class="bg-white p-4 rounded-xl shadow-md">
+        <h2 class="text-lg font-semibold">Activity Log</h2>
+        <button class="bg-purple-600 text-white px-4 py-2 rounded-md mt-4">
+          Clear History
+        </button>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      // Change Background Color Randomly
+      document
+        .getElementById("colorButton")
+        .addEventListener("click", function () {
+          const colors = [
+            "#fcd34d",
+            "#6ee7b7",
+            "#60a5fa",
+            "#f472b6",
+            "#f87171",
+          ];
+          document.body.style.backgroundColor =
+            colors[Math.floor(Math.random() * colors.length)];
+        });
+
+      // Update Date in Real-Time
+      function updateDate() {
+        document.getElementById("dateCard").innerText =
+          new Date().toDateString();
+      }
+      updateDate();
+      setInterval(updateDate, 1000);
+
+      // Make Discover Banner Clickable
+      document
+        .getElementById("discoverBanner")
+        .addEventListener("click", function () {
+          window.location.href = "https://example.com"; // Change this to your desired link
+        });
+    </script>
+  </body>
+</html>
