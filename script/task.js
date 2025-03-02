@@ -52,7 +52,7 @@ function completeTask(button) {
     if (
       document.querySelectorAll(".complete-btn:not([disabled])").length === 0
     ) {
-      alert("All tasks have been completed!");
+      alert("Congratulations! You have successfully completed all tasks");
     }
   }
 }
