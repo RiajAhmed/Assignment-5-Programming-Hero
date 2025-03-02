@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Something New Today</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 p-4 transition-all duration-300">
+    <!-- Navbar -->
+    <nav
+      class="bg-white p-4 rounded-xl shadow-md flex justify-between items-center"
+    >
+      <div class="flex items-center gap-4">
+        <img src="./images/logo.png" alt="Dev Board Logo" />
+        <h1 class="text-xl font-bold">
+          <span class="text-cyan-900">Dev</span>Board
+        </h1>
+      </div>
+    </div>
+    <button
+      class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded" id="backToDeskButton"
+    >
+      Back To Desk
+    </button>
+  </div>
+    </nav>
+    <main >
+        <div class="bg-white p-4 rounded-xl shadow-md flex flex-col justify-between  mt-4 ">
+            <p class="border-b border-gray-300 font-bold">Question-1: What are the different ways to select an element in the DOM?</p>
+            <br>
+            <p> 1.By ID <br>
+                2.By Class Name <br>
+                3.By Tag Name <br>
+                4.By Name <br>
+                5.Using querySelectorAll
+                </p>
+        </div>
+        <div class="bg-white p-4 rounded-xl shadow-md flex flex-col justify-between  mt-4 ">
+            <p class="border-b border-gray-300 font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+            <br>
+            <p>innerHTML returns or sets HTML markup, while innerText returns only visible text affected by CSS.
+                textContent returns all text (including hidden) and is faster since it doesn’t trigger reflow.</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl shadow-md flex flex-col justify-between  mt-4 ">
+            <p class="border-b border-gray-300 font-bold">Question-3: What is event delegation in the DOM?</p>
+            <br>
+            <p>Event delegation attaches a single event listener to a parent element to handle events on its child elements via event bubbling.
+                It reduces the need for multiple listeners by detecting events on descendants through a unified handler.</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl shadow-md flex flex-col justify-between  mt-4 ">
+            <p class="border-b border-gray-300 font-bold">Question-4: What is event bubbling in the DOM?</p>
+            <br>
+            <p>Event bubbling is a propagation method where an event starts from the target element and moves up through its ancestors in the DOM.</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl shadow-md flex flex-col justify-between  mt-4 ">
+            <p class="border-b border-gray-300 font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+            <br>
+            <p> 1. Create an element: document.createElement('tag') <br>
+                2. Add an element:
+                parent.appendChild(child)
+                parent.append(newElement) <br>
+                3. Remove an element:
+                element.remove()</p>
+        </div>
+    
+    </main>
+    <!-- JavaScript -->
+    <script src="./script/discover.js"></script>
+  </body>
+</html>
